@@ -6,7 +6,7 @@
 
 **Generate speech, sound effects, music and beyond.**
 
-This repo currently support: 
+This dev repo currently support: 
 
 - **Text-to-Audio Generation**: Generate audio given text input.
 - **Audio-to-Audio Generation**: Given an audio, generate another audio that contain the same type of sound. 
