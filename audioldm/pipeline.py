@@ -83,7 +83,7 @@ def build_model(
     resume_from_checkpoint = ckpt_path
 
     checkpoint = torch.load(resume_from_checkpoint, map_location=device)
-    latent_diffusion.load_state_dict(checkpoint["state_dict"])
+    latent_diffusion.load_state_dict(checkpoint["state_dict"], strict=False)
 
     latent_diffusion.eval()
     latent_diffusion = latent_diffusion.to(device)
